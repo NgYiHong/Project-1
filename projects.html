@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleDetails(id) {
+      const elem = document.getElementById(id);
+      elem.style.display = elem.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="interests.html">Interests</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="page-title">My Projects</h1>
+
+    <div class="projects-container">
+        <details class="project-item">
+            <summary>Monopoly Game</summary>
+            <p>A multiplayer browser-based Monopoly clone with custom rules and an AI player. Features an engaging Monopoly board design, friendly User Interfaces and a fulfilling User Experience.</p>
+        </details>
+
+        <details class="project-item">
+            <summary>Financial Mobile App</summary>
+            <p>An Android-based application that allows users to manage their finances more effectively. It includes budgeting, expenditure tracking and monthly analysis based on different categories.</p>
+        </details>
+    </div>
+  </main>
+</body>
+</html>
